@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto | Chat Corporación</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<!-- ================================
+     NAVBAR
+================================ -->
+<header class="header">
+  <div class="navbar">
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Chat Corporación" class="logo">
+      <span class="brand">Chat Corporación</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="empresa.html">Empresa</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="login.html" class="admin-btn">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero-contacto">
+  <h1>Contáctanos</h1>
+  <p>
+    Cuéntanos sobre tu proyecto y nos pondremos
+    en contacto contigo lo antes posible.
+  </p>
+</section>
+
+<section class="contact-container">
+
+  <div class="contact-info">
+    <h2>Hablemos de tu proyecto</h2>
+    <p>
+      En Chat Corporación estamos listos para ayudarte
+      a transformar tus ideas en soluciones digitales.
+    </p>
+  </div>
+
+  <div class="contact-form">
+    <form action="php/enviar_contacto.php" method="POST">
+
+      <label>Nombre completo</label>
+      <input type="text" name="nombre" required>
+
+      <label>Correo electrónico</label>
+      <input type="email" name="correo" required>
+
+      <label>Teléfono</label>
+      <input type="text" name="telefono">
+
+      <label>Mensaje</label>
+      <textarea name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </div>
+
+</section>
+
+<section class="contact-note">
+  <p>
+    🔒 Tus datos están protegidos y solo serán utilizados
+    para fines de contacto profesional.
+  </p>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Chat Corporación</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<section class="login-container">
+
+  <div class="login-card">
+    <h2>Acceso Administrador</h2>
+    <p>Solo personal autorizado</p>
+
+    <form action="php/login.php" method="POST">
+      <label>Correo electrónico</label>
+      <input type="email" name="correo" required>
+
+      <label>Contraseña</label>
+      <input type="password" name="password" required>
+
+      <button type="submit">Iniciar sesión</button>
+    </form>
+  </div>
+
+</section>
+
+</body>
+</html>
