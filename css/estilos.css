@@ -3,9 +3,6 @@ body{font-family:Arial;background:#f4f6fb;}
 .header a{color:white;margin:10px;text-decoration:none;}
 .logo{height:50px;}
 .hero{text-align:center;padding:60px;}
-/* ================================
-   NAVBAR - CHAT CORPORACIÓN
-================================ */
 
 .header {
   background: #0f172a;
@@ -80,9 +77,6 @@ body{font-family:Arial;background:#f4f6fb;}
   color: #cbd5e1;
   font-size: 14px;
 }
-/* ================================
-   INDEX - SECCIONES EXTRA
-================================ */
 
 .hero {
   background: linear-gradient(135deg, #0f172a, #1e293b);
@@ -435,4 +429,94 @@ body{font-family:Arial;background:#f4f6fb;}
 
 .admin-table tr:hover {
   background: #f1f5f9;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    margin-left: 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .admin-btn {
+    width: fit-content;
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-text {
+    padding: 30px 20px;
+  }
+
+  .mision-vision {
+    grid-template-columns: 1fr;
+  }
+
+  .empresa-section,
+  .metodologia,
+  .valores {
+    margin: 50px auto;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-img {
+    height: 180px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-form {
+    padding: 25px;
+  }
+
+  .admin-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-table {
+    overflow-x: auto;
+  }
+
+  .admin-table table {
+    min-width: 700px;
+  }
+
+  .footer-logo {
+    height: 45px;
+  }
+
+  .footer-content p {
+    font-size: 13px;
+    text-align: center;
+  }
 }
